@@ -8,7 +8,7 @@ export default function App() {
   const getQuote = () => {
     var requestOptions = {
       method: "GET",
-      redirect: "follow"
+      redirect: "follow",
     };
     fetch("https://stoic-quotes.com/api/quote", requestOptions)
       .then((response) => response.json())
@@ -20,7 +20,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="card">
-        <div className="card-header">Download</div>
+        <div className="card-header"></div>
         <div className="card-body">
           <div>
             <h3>{quote.author}</h3>
